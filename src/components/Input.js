@@ -17,14 +17,14 @@ class Input extends React.Component {
   }
 
   changeGuideText(new_inp) {
-    if (new_inp.length == 1) {
+    this.setState({
+      inp: new_inp.length <= 65 ? new_inp : ''
+    });
+    if (this.state.inp == 1) {
       this.setState({
         startTime: Date.now()
       });
     }
-    this.setState({
-      inp: new_inp.length <= 65 ? new_inp : ''
-    });
 
     const elapsedTimeMinutes = (Date.now() - this.state.startTime) / 60000
     this.props.calculateWPM(new_inp, elapsedTimeMinutes);

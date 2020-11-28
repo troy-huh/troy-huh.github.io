@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/troy-huh.github.io/static/css/main.522c90cd.chunk.css",
+    "main.js": "/troy-huh.github.io/static/js/main.a40ee01b.chunk.js",
+    "main.js.map": "/troy-huh.github.io/static/js/main.a40ee01b.chunk.js.map",
+    "runtime-main.js": "/troy-huh.github.io/static/js/runtime-main.6d689829.js",
+    "runtime-main.js.map": "/troy-huh.github.io/static/js/runtime-main.6d689829.js.map",
+    "static/js/2.d10f756e.chunk.js": "/troy-huh.github.io/static/js/2.d10f756e.chunk.js",
+    "static/js/2.d10f756e.chunk.js.map": "/troy-huh.github.io/static/js/2.d10f756e.chunk.js.map",
+    "index.html": "/troy-huh.github.io/index.html",
+    "static/css/main.522c90cd.chunk.css.map": "/troy-huh.github.io/static/css/main.522c90cd.chunk.css.map",
+    "static/js/2.d10f756e.chunk.js.LICENSE.txt": "/troy-huh.github.io/static/js/2.d10f756e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6d689829.js",
+    "static/js/2.d10f756e.chunk.js",
+    "static/css/main.522c90cd.chunk.css",
+    "static/js/main.a40ee01b.chunk.js"
+  ]
+}

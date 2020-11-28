@@ -20,18 +20,18 @@ class Input extends React.Component {
     this.setState({
       inp: new_inp.length <= 65 ? new_inp : ''
     });
-    if (this.state.inp == 1) {
+    if (this.state.inp.length == 1) {
       this.setState({
         startTime: Date.now()
       });
     }
 
-    const elapsedTimeMinutes = (Date.now() - this.state.startTime) / 60000
-    this.props.calculateWPM(new_inp, elapsedTimeMinutes);
+    const elapsedTimeMinutes = (Date.now() - this.state.startTime) / 60000;
+    this.props.calculateWPM(this.state.inp, elapsedTimeMinutes);
   }
 
   getGuideText() {
-    const originalGuideText = 'nigger'.repeat(11)
+    const originalGuideText = 'nigger'.repeat(11);
     return (
       <div id='wrapper'>
         {originalGuideText.slice(0, this.state.inp.length).split('').map((s, i) => {

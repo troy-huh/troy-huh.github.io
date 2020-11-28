@@ -13,6 +13,7 @@ class Input extends React.Component {
 
     this.changeGuideText = this.changeGuideText.bind(this);
     this.getGuideText = this.getGuideText.bind(this);
+    this.getInpText = this.getInpText.bind(this);
   }
 
   changeGuideText(new_inp) {
@@ -22,7 +23,7 @@ class Input extends React.Component {
       });
     }
     this.setState({
-      inp: new_inp
+      inp: new_inp.length <= 65 ? new_inp : ''
     });
 
     const elapsedTimeMinutes = (Date.now() - this.state.startTime) / 60000
@@ -43,12 +44,17 @@ class Input extends React.Component {
     );
   }
 
+  getInpText() {
+    return this.state.inp;
+  }
+
   render() {
     return (
       <a>
         <form>
           <input
             type='text'
+            value={this.getInpText()}
             className='question'
             onChange={e => this.changeGuideText(e.target.value)} />
           <label for='nme'>

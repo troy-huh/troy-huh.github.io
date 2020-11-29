@@ -13,7 +13,7 @@ class App extends React.Component {
 
     this.state = {
       WPM: 0,
-      guideWord: ''
+      guideWord: 'nigger'
     }
   }
 

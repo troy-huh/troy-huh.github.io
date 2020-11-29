@@ -13,21 +13,21 @@ class App extends React.Component {
 
     this.state = {
       WPM: 0,
-      easterEgg: false
+      guideWord: ''
     }
   }
 
-  calculateWPM(easterEgg, inp, time) {
-    if (easterEgg) {
-      this.setState({
-        easterEgg: true
-      })
-    }
-    const correct = this.state.easterEgg ? 'kaleb'.repeat(13) : 'nigger'.repeat(11);
-    let total = this.state.easterEgg ? inp.length / 5 : inp.length / 6;
+  calculateWPM(guideWord, inp, time) {
+    this.setState({
+      guideWord: guideWord
+    })
+    const guideWordLength = this.state.guideWord.length
+
+    const correct = this.state.guideWord.repeat(13)
+    let total = inp.length / guideWordLength
     for (let i = 0; i < inp.length; i++) {
       if (inp.charAt(i) != correct.charAt(i)) {
-        total -= this.state.easterEgg ? 1 / 5 : 1 / 6;
+        total -= 1 / guideWordLength
       }
     }
 
@@ -39,8 +39,8 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <WPM WPM={this.state.WPM} easterEgg={this.state.easterEgg} />
-        <Input calculateWPM={(easterEgg, inp, time) => this.calculateWPM(easterEgg, inp, time)}/>
+        <WPM WPM={this.state.WPM} guideWord={this.state.guideWord} />
+        <Input calculateWPM={(guideWord, inp, time) => this.calculateWPM(guideWord, inp, time)}/>
       </div>
     );
   }

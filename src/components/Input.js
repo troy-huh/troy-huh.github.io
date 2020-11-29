@@ -8,7 +8,8 @@ class Input extends React.Component {
 
     this.state = {
       inp: '',
-      startTime: 0
+      startTime: 0,
+      easterEgg: false
     };
 
     this.changeGuideText = this.changeGuideText.bind(this);
@@ -25,13 +26,18 @@ class Input extends React.Component {
         startTime: Date.now()
       });
     }
+    if (this.state.inp == 'kaleb') {
+      this.setState({
+        easterEgg: true
+      });
+    }
 
     const elapsedTimeMinutes = (Date.now() - this.state.startTime) / 60000;
-    this.props.calculateWPM(this.state.inp, elapsedTimeMinutes);
+    this.props.calculateWPM(this.state.easterEgg, this.state.inp, elapsedTimeMinutes);
   }
 
   getGuideText() {
-    const originalGuideText = 'nigger'.repeat(11);
+    const originalGuideText = this.state.easterEgg ? 'kaleb'.repeat(13) : 'nigger'.repeat(11);
     return (
       <div id='wrapper'>
         {originalGuideText.slice(0, this.state.inp.length).split('').map((s, i) => {

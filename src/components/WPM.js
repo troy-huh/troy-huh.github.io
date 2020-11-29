@@ -6,7 +6,7 @@ class WPM extends React.Component {
     return (
       <h1 className='WPM' id='wrapper'>
         <a style={{ color: this.props.WPM > 150 ? 'green' : 'red'}} id='left'>{Math.round(this.props.WPM)}</a>
-        <a id='right'> NPM</a>
+        <a id='right'> {this.props.easterEgg ? 'KPM' : 'NPM'}</a>
       </h1>
     );
   }

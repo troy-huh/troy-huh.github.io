@@ -41,7 +41,7 @@ class Input extends React.Component {
     this.setState({
       inp: (new_inp.length < 66 - (66 % this.state.guideWord.length)) ? new_inp : ''
     });
-    if (this.state.inp.length == 0 || this.state.inp.length == 1) {
+    if (this.state.inp.length === 0 || this.state.inp.length === 1) {
       this.setState({
         startTime: Date.now(),
         easterEgg: ''
@@ -62,7 +62,7 @@ class Input extends React.Component {
     return (
       <div id='wrapper'>
         {originalGuideText.slice(0, this.state.inp.length).split('').map((s, i) => {
-          return <span style={{ color: this.state.inp.charAt(i) == s ? 'green' : 'red' }} id='wrapItem'>{`${s}`}</span>
+          return <span style={{ color: this.state.inp.charAt(i) === s ? 'green' : 'red' }} id='wrapItem'>{`${s}`}</span>
         })}
         {originalGuideText.slice(this.state.inp.length).split('').map(s => {
           return <span style={{ color: 'black' }} id='wrapItem'>{`${s}`}</span>

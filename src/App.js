@@ -1,5 +1,4 @@
 import React from 'react';
-import { renderIntoDocument } from 'react-dom/test-utils';
 import './App.css';
 
 import Input from './components/Input';
@@ -26,7 +25,7 @@ class App extends React.Component {
     const correct = this.state.guideWord.repeat(13)
     let total = inp.length / guideWordLength
     for (let i = 0; i < inp.length; i++) {
-      if (inp.charAt(i) != correct.charAt(i)) {
+      if (inp.charAt(i) !== correct.charAt(i)) {
         total -= 1 / guideWordLength
       }
     }

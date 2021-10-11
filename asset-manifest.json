@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/troy-huh.github.io/static/css/main.e3641bae.chunk.css",
-    "main.js": "/troy-huh.github.io/static/js/main.32269b99.chunk.js",
-    "main.js.map": "/troy-huh.github.io/static/js/main.32269b99.chunk.js.map",
-    "runtime-main.js": "/troy-huh.github.io/static/js/runtime-main.6d689829.js",
-    "runtime-main.js.map": "/troy-huh.github.io/static/js/runtime-main.6d689829.js.map",
-    "static/js/2.34ecc657.chunk.js": "/troy-huh.github.io/static/js/2.34ecc657.chunk.js",
-    "static/js/2.34ecc657.chunk.js.map": "/troy-huh.github.io/static/js/2.34ecc657.chunk.js.map",
-    "index.html": "/troy-huh.github.io/index.html",
-    "static/css/main.e3641bae.chunk.css.map": "/troy-huh.github.io/static/css/main.e3641bae.chunk.css.map",
-    "static/js/2.34ecc657.chunk.js.LICENSE.txt": "/troy-huh.github.io/static/js/2.34ecc657.chunk.js.LICENSE.txt"
+    "main.css": "/static/css/main.e3641bae.chunk.css",
+    "main.js": "/static/js/main.32269b99.chunk.js",
+    "main.js.map": "/static/js/main.32269b99.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.80bd6f83.js",
+    "runtime-main.js.map": "/static/js/runtime-main.80bd6f83.js.map",
+    "static/js/2.34ecc657.chunk.js": "/static/js/2.34ecc657.chunk.js",
+    "static/js/2.34ecc657.chunk.js.map": "/static/js/2.34ecc657.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.e3641bae.chunk.css.map": "/static/css/main.e3641bae.chunk.css.map",
+    "static/js/2.34ecc657.chunk.js.LICENSE.txt": "/static/js/2.34ecc657.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.6d689829.js",
+    "static/js/runtime-main.80bd6f83.js",
     "static/js/2.34ecc657.chunk.js",
     "static/css/main.e3641bae.chunk.css",
     "static/js/main.32269b99.chunk.js"
